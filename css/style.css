@@ -1,0 +1,109 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    padding: 3rem 1.5rem;
+}
+
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 2px 15px 15px hsl(224, 43%, 86%);
+    max-width: 24rem;
+}
+
+h4{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+p{
+    font-size: 16px;
+    margin: 1rem 2rem 1rem 2rem;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    line-height: 1.5;
+}
+.annual-plan{
+    display: flex;
+    gap: .75rem;
+    background-color: hsl(225, 100%, 98%);
+    margin: 1rem 0 1.5rem;
+    padding: 1rem;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.annual-plan>.money{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-right: 2rem;
+}
+
+.annual-plan>.money>span:nth-of-type(1){
+    font-weight: 900;
+}
+.annual-plan>.money>span:nth-of-type(2){
+    color:hsl(224, 23%, 55%);
+    
+}
+.annual-plan>a{
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: smaller;
+    color: hsl(245, 75%, 52%);
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.btn>button{
+    background-color:hsl(245, 75%, 52%);
+    color:#f2f2f2 ;
+    padding: 1rem 3.65rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 15px 15px hsl(224, 43%, 86%);
+}
+
+.btn>button:nth-of-type(2){
+    background:transparent;
+    color:hsl(224, 23%, 55%);   
+    box-shadow: unset;
+}
+
+@media(min-width:1000px){
+    body{
+        display: flex;
+        background-image: url('../images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        justify-content: center;
+        align-items:center;
+    }
+}
