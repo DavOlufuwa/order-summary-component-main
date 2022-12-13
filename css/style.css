@@ -73,6 +73,13 @@ p{
     color: hsl(245, 75%, 52%);
 }
 
+.annual-plan>a:hover,
+.annual-plan>a:active{
+    text-decoration: none;
+    color:hsl(224, 23%, 55%) ;
+}
+
+
 .btn{
     display: flex;
     flex-direction: column;
@@ -91,10 +98,17 @@ p{
     box-shadow: 0px 15px 15px hsl(224, 43%, 86%);
 }
 
+.btn>button:hover{
+    background-color:hsl(224, 23%, 55%) ;
+}
 .btn>button:nth-of-type(2){
     background:transparent;
     color:hsl(224, 23%, 55%);   
     box-shadow: unset;
+}
+
+.btn>button:nth-of-type(2):hover{
+    color: hsl(223, 47%, 23%) ;
 }
 
 @media(min-width:1000px){
