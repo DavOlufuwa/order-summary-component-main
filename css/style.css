@@ -113,11 +113,12 @@ p{
 
 @media(min-width:1000px){
     body{
-        display: flex;
+        
         background-image: url('../images/pattern-background-desktop.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        justify-content: center;
-        align-items:center;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
     }
 }
